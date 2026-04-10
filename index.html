@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. Kamran Hasan Rafin | Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="techCanvas"></canvas>
+    <div class="bg-glow glow-top-left"></div>
+    <div class="bg-glow glow-bottom-right"></div>
+    <div class="glow-center"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-scanlines"></div>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <header class="dark-nav" id="navbar">
+        <nav>
+            <div class="logo">Portfolio<span class="gradient-text">.</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#skills" class="nav-item">Expertise</a></li>
+                <li><a href="#experience" class="nav-item">Experience</a></li>
+                <li><a href="#research" class="nav-item">Research</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#contact" class="nav-cta nav-item">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-content reveal">
+                <div class="pill-badge">🚀 Next Generation Engineering</div>
+                <h1>MD. Kamran<br>Hasan Rafin</h1>
+                <h2 class="subtitle">Software Engineer &amp; <span class="gradient-text" id="typedText"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc">
+                    Computer Science &amp; Engineering student at <span class="text-highlight">Southeast University</span> specializing in Artificial Intelligence, robust software architecture, and advanced computer networking.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#research" class="btn btn-gradient">View Research</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                    <a href="mailto:mdkamranhasanrafin@gmail.com" class="btn btn-ghost">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-area reveal reveal-right">
+                <div class="image-border-gradient">
+                    <img src="profile.jpg" alt="MD. Kamran Hasan Rafin" class="profile-pic">
+                </div>
+                <div class="hero-badge badge-1"><i class="fas fa-brain"></i> AI Enthusiast</div>
+                <div class="hero-badge badge-2"><i class="fas fa-code"></i> SE Student</div>
+            </div>
+        </div>
+
+        <div class="stats-bar reveal">
+            <div class="stat-item">
+                <div class="stat-num-wrap"><span class="stat-num" data-target="3">0</span><span class="stat-suffix">+</span></div>
+                <p>Projects Built</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-num-wrap"><span class="stat-num" data-target="1">0</span><span class="stat-suffix">yr+</span></div>
+                <p>Work Experience</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-num-wrap"><span class="stat-num" data-target="1">0</span></div>
+                <p>Research Paper</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-num-wrap"><span class="stat-num" data-target="3">0</span><span class="stat-suffix">+</span></div>
+                <p>Languages Known</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-title reveal">
+            <span>01</span>
+            <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+            <div class="glass-card reveal">
+                <p>I am a Computer Science and Engineering student at <span class="text-highlight">Southeast University</span>, driven by a deep fascination with artificial intelligence and robust software architecture.</p>
+                <p>My academic and technical background spans across theoretical machine learning, communication theory, and complex algorithm optimization. I am particularly passionate about leveraging data-driven insights to solve critical industry challenges, bridging the gap between academic research and scalable enterprise applications.</p>
+                <p>Equipped with a continuous-learning mindset, I thrive in collaborative, fast-paced environments. Whether I am architecting backend infrastructures, optimizing legacy codebases, or exploring the latest advancements in AI, I remain committed to engineering high-quality, innovative technology that drives measurable impact.</p>
+            </div>
+            <div class="glass-card text-center reveal reveal-right">
+                <h3 class="card-title">Focus Areas</h3>
+                <ul class="skill-list">
+                    <li><i class="fas fa-robot"></i> Machine Learning</li>
+                    <li><i class="fas fa-chart-line"></i> Predictive Modeling</li>
+                    <li><i class="fas fa-server"></i> Backend Engineering</li>
+                    <li><i class="fas fa-network-wired"></i> Computer Networking</li>
+                    <li><i class="fas fa-database"></i> Data Structures</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="section-title reveal">
+            <span>02</span>
+            <h2>Technical &amp; Professional Expertise</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-group glass-card reveal">
+                <h3 class="card-title">Programming Languages</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-label"><span>Python</span><span class="skill-pct">85%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-label"><span>Java</span><span class="skill-pct">75%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-label"><span>C++</span><span class="skill-pct">70%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+                    </div>
+                </div>
+                <h3 class="card-title" style="margin-top:35px;">Professional Skills</h3>
+                <div class="tags">
+                    <span class="tag tag-accent">English (Fluent)</span>
+                    <span class="tag">Agile Methodologies</span>
+                    <span class="tag">Cross-functional Collaboration</span>
+                    <span class="tag">Technical Documentation</span>
+                    <span class="tag">Analytical Problem Solving</span>
+                    <span class="tag">IT Operations</span>
+                </div>
+            </div>
+            <div class="skill-group glass-card reveal reveal-right">
+                <h3 class="card-title">Core Domains</h3>
+                <div class="domain-grid">
+                    <div class="domain-card"><i class="fas fa-brain domain-icon"></i><span>Artificial Intelligence</span></div>
+                    <div class="domain-card"><i class="fas fa-cogs domain-icon"></i><span>Machine Learning</span></div>
+                    <div class="domain-card"><i class="fas fa-network-wired domain-icon"></i><span>Computer Networking</span></div>
+                    <div class="domain-card"><i class="fas fa-wave-square domain-icon"></i><span>Communication Theory</span></div>
+                    <div class="domain-card"><i class="fas fa-bolt domain-icon"></i><span>Algorithm Optimization</span></div>
+                    <div class="domain-card"><i class="fas fa-sitemap domain-icon"></i><span>Data Structures</span></div>
+                </div>
+                <h3 class="card-title" style="margin-top:35px;">Tools &amp; Frameworks</h3>
+                <div class="tags">
+                    <span class="tag tag-accent">Scikit-Learn</span>
+                    <span class="tag tag-accent">NumPy</span>
+                    <span class="tag tag-accent">Pandas</span>
+                    <span class="tag">Git / GitHub</span>
+                    <span class="tag">VS Code</span>
+                    <span class="tag">Jupyter Notebook</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="section-title reveal">
+            <span>03</span>
+            <h2>Work Experience &amp; Education</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="glass-card border-left-accent timeline-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="card-title" style="margin-bottom:4px;">IT Executive Officer</h3>
+                            <p class="exp-company">Suffix IT Ltd <span class="gradient-text">| Collaborative Project with Abul Khair Tobacco Ltd</span></p>
+                        </div>
+                        <span class="exp-date">2025</span>
+                    </div>
+                    <p>Managed IT operations and provided critical technical support for a collaborative enterprise project. Utilized strong communication skills to bridge the gap between technical teams and stakeholders, ensuring smooth project execution and infrastructure reliability.</p>
+                    <div class="exp-tags">
+                        <span class="tag">IT Operations</span>
+                        <span class="tag">Stakeholder Communication</span>
+                        <span class="tag">Infrastructure</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot timeline-dot-edu"></div>
+                <div class="glass-card border-left-green timeline-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="card-title" style="margin-bottom:4px;">B.Sc. in Computer Science &amp; Engineering</h3>
+                            <p class="exp-company">Southeast University <span class="gradient-text">| Dhaka, Bangladesh</span></p>
+                        </div>
+                        <span class="exp-date exp-date-green">2022 – Present</span>
+                    </div>
+                    <p>Pursuing a Bachelor of Science degree with a focus on Artificial Intelligence, Machine Learning, Computer Networking, and Software Architecture. Engaged in hands-on research and project work.</p>
+                    <div class="exp-tags">
+                        <span class="tag tag-accent">AI &amp; ML</span>
+                        <span class="tag tag-accent">Networking</span>
+                        <span class="tag tag-accent">Software Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section">
+        <div class="section-title reveal">
+            <span>04</span>
+            <h2>Featured Research</h2>
+        </div>
+        <div class="glass-card feature-glow reveal">
+            <div class="research-header">
+                <p class="card-category">Academic Research Project</p>
+                <span class="research-status in-progress"><i class="fas fa-circle"></i> In Progress</span>
+            </div>
+            <h3 class="card-title large-title">Burley Tobacco Leaf Grading using Machine Learning</h3>
+            <p>Spearheaded an extensive data-driven research initiative focused on the Rangpur zone of Bangladesh. Developed machine learning models to analyze environmental variables and physical characteristics of Burley tobacco leaves to automate, standardize, and optimize the quality grading process.</p>
+            <div class="research-note"><i class="fas fa-hourglass-half"></i> This research paper is currently being worked on and has not yet been published.</div>
+            <div class="research-highlights">
+                <div class="highlight-item"><i class="fas fa-map-marker-alt"></i><span>Rangpur Zone, Bangladesh</span></div>
+                <div class="highlight-item"><i class="fas fa-flask"></i><span>Data-Driven Approach</span></div>
+                <div class="highlight-item"><i class="fas fa-leaf"></i><span>Agricultural AI</span></div>
+            </div>
+            <div class="card-tech">
+                <span>Python</span>
+                <span>Scikit-Learn</span>
+                <span>Predictive Modeling</span>
+                <span>Data Analysis</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-title reveal">
+            <span>05</span>
+            <h2>Technical Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="glass-card hover-lift reveal project-card">
+                <div class="project-top">
+                    <div class="card-icon"><span>☕</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/rafin2312" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="card-title">Enterprise Java System</h3>
+                <p>Designed a robust software application applying core OOP principles. Focused on scalable data structures and optimal runtime performance.</p>
+                <div class="card-footer"><span>Java</span><span>OOP</span></div>
+            </div>
+
+            <div class="glass-card hover-lift reveal project-card">
+                <div class="project-top">
+                    <div class="card-icon"><span>⚡</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/rafin2312" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="card-title">Advanced Algorithmic Suite</h3>
+                <p>Engineered a high-performance algorithmic suite focusing on advanced dynamic programming and resource allocation models, such as the 0/1 Knapsack problem. Benchmarked computational complexity and memory utilization.</p>
+                <div class="card-footer"><span>C++</span><span>Data Structures</span></div>
+            </div>
+
+            <div class="glass-card hover-lift reveal project-card">
+                <div class="project-top">
+                    <div class="card-icon"><span>🌐</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/rafin2312" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="card-title">Network Protocol Analysis</h3>
+                <p>Studied data transmission behaviors based on advanced communication theory principles to analyze packet loss and latency.</p>
+                <div class="card-footer"><span>Networking</span><span>Protocols</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="section">
+        <div class="section-title reveal">
+            <span>06</span>
+            <h2>Beyond the Code</h2>
+        </div>
+        <div class="projects-grid" style="margin-bottom: 60px;">
+            <div class="glass-card hover-lift reveal interest-card">
+                <div class="card-icon"><span>⛰️</span></div>
+                <h3 class="card-title">Mountain Trekking</h3>
+                <p>I am an avid traveler who finds peace and challenge in the mountains. I frequently go trekking in the rugged, beautiful terrains of Bandarban to recharge.</p>
+                <div class="interest-tag"><i class="fas fa-map-marker-alt"></i> Bandarban, Bangladesh</div>
+            </div>
+            <div class="glass-card hover-lift reveal interest-card">
+                <div class="card-icon"><span>📸</span></div>
+                <h3 class="card-title">Photography</h3>
+                <p>Alongside my technical pursuits, I am passionate about photography. It serves as my creative outlet to capture the stunning landscapes and moments from my journeys.</p>
+                <div class="interest-tag"><i class="fas fa-camera"></i> Landscape &amp; Travel</div>
+            </div>
+        </div>
+
+        <!-- Photography Gallery -->
+        <div class="gallery-wrapper reveal">
+            <div class="gallery-header">
+                <h3 class="gallery-title"><i class="fas fa-images"></i> My Photography</h3>
+                <p class="gallery-subtitle">Moments captured through the lens — landscapes, travels, and life.</p>
+            </div>
+            <div class="photo-gallery" id="photoGallery">
+                <!-- photo1.jpg -->
+                <div class="gallery-item" id="item-photo1">
+                    <img src="photo1.jpg" alt="Photo 1" onerror="this.closest('.gallery-item').style.display='none'">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <!-- photo2.jpg -->
+                <div class="gallery-item" id="item-photo2">
+                    <img src="photo2.jpg" alt="Photo 2" onerror="this.closest('.gallery-item').style.display='none'">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <!-- photo3.jpg -->
+                <div class="gallery-item" id="item-photo3">
+                    <img src="photo3.jpg" alt="Photo 3" onerror="this.closest('.gallery-item').style.display='none'">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <!-- photo4.jpg -->
+                <div class="gallery-item" id="item-photo4">
+                    <img src="photo4.jpg" alt="Photo 4" onerror="this.closest('.gallery-item').style.display='none'">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <!-- photo5.jpg -->
+                <div class="gallery-item" id="item-photo5">
+                    <img src="photo5.jpg" alt="Photo 5" onerror="this.closest('.gallery-item').style.display='none'">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <!-- photo6.jpg -->
+                <div class="gallery-item" id="item-photo6">
+                    <img src="photo6.jpg" alt="Photo 6" onerror="this.closest('.gallery-item').style.display='none'">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <p class="gallery-hint"><i class="fas fa-info-circle"></i> Place your photos named <code>photo1.jpg</code>, <code>photo2.jpg</code>, etc. in the same folder as this file.</p>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+            <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+            <div class="lightbox-content">
+                <img id="lightboxImg" src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="glass-card text-center contact-box reveal">
+            <h2 class="card-category">07. Let's Connect</h2>
+            <h3 class="card-title large-title">Get In Touch</h3>
+            <p class="contact-desc">I am currently looking for new opportunities, internships, and research collaborations. Whether you have a question or just want to say hello, my inbox is always open.</p>
+            
+            <div class="contact-info-row">
+                <a href="mailto:mdkamranhasanrafin@gmail.com" class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>mdkamranhasanrafin@gmail.com</span>
+                </a>
+                <span class="contact-divider">|</span>
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Dhaka, Bangladesh</span>
+                </div>
+            </div>
+
+            <a href="mailto:mdkamranhasanrafin@gmail.com" class="btn btn-gradient large-btn">Start Project / Email Me</a>
+
+            <div class="vibrant-social-links">
+                <a href="https://github.com/rafin2312" target="_blank" aria-label="GitHub" class="social-icon github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rafin2312" target="_blank" aria-label="LinkedIn" class="social-icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.facebook.com/rafin2312" target="_blank" aria-label="Facebook" class="social-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <p>Crafted by MD. Kamran Hasan Rafin &copy; 2026</p>
+            <a href="#hero" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Typing Effect
+        const words = ["AI Enthusiast", "ML Researcher", "Problem Solver", "CS Student"];
+        let wIdx = 0, cIdx = 0, deleting = false;
+        const el = document.getElementById("typedText");
+        function type() {
+            const word = words[wIdx];
+            el.textContent = deleting ? word.substring(0, cIdx--) : word.substring(0, cIdx++);
+            if (!deleting && cIdx > word.length) { setTimeout(() => deleting = true, 1800); }
+            if (deleting && cIdx < 0) { deleting = false; wIdx = (wIdx + 1) % words.length; }
+            setTimeout(type, deleting ? 60 : 110);
+        }
+        type();
+
+        // Hamburger
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+        const overlay = document.getElementById("mobileOverlay");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("open");
+            navLinks.classList.toggle("open");
+            overlay.classList.toggle("active");
+        });
+        overlay.addEventListener("click", () => {
+            hamburger.classList.remove("open");
+            navLinks.classList.remove("open");
+            overlay.classList.remove("active");
+        });
+        navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+            hamburger.classList.remove("open");
+            navLinks.classList.remove("open");
+            overlay.classList.remove("active");
+        }));
+
+        // Navbar scroll
+        window.addEventListener("scroll", () => {
+            document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 60);
+        });
+
+        // Active nav
+        const sections = document.querySelectorAll("section[id]");
+        const navItems = document.querySelectorAll(".nav-item");
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+            navItems.forEach(a => {
+                a.classList.remove("active");
+                if (a.getAttribute("href") === "#" + current) a.classList.add("active");
+            });
+        });
+
+        // Scroll reveal
+        const revealEls = document.querySelectorAll(".reveal");
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("revealed"); revealObs.unobserve(e.target); } });
+        }, { threshold: 0.1 });
+        revealEls.forEach(el => revealObs.observe(el));
+
+        // Skill bars
+        const bars = document.querySelectorAll(".skill-bar-fill");
+        const barObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.style.width = e.target.dataset.width + "%"; barObs.unobserve(e.target); } });
+        }, { threshold: 0.3 });
+        bars.forEach(b => barObs.observe(b));
+
+        // Counter
+        const counters = document.querySelectorAll(".stat-num");
+        function animateCounter(el) {
+            const target = +el.dataset.target;
+            let count = 0;
+            const interval = setInterval(() => {
+                count++;
+                el.textContent = count;
+                if (count >= target) clearInterval(interval);
+            }, 120);
+        }
+        // Run counters after short delay (they're in hero, visible on load)
+        setTimeout(() => { counters.forEach(el => animateCounter(el)); }, 800);
+
+        // Gallery Lightbox
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        let currentIndex = 0;
+        const visibleItems = () => [...galleryItems].filter(i => i.style.display !== 'none');
+
+        galleryItems.forEach((item, i) => {
+            item.addEventListener('click', () => {
+                const items = visibleItems();
+                currentIndex = items.indexOf(item);
+                lightboxImg.src = items[currentIndex].querySelector('img').src;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        document.getElementById('lightboxClose').addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('lightboxPrev').addEventListener('click', () => {
+            const items = visibleItems();
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            lightboxImg.src = items[currentIndex].querySelector('img').src;
+        });
+        document.getElementById('lightboxNext').addEventListener('click', () => {
+            const items = visibleItems();
+            currentIndex = (currentIndex + 1) % items.length;
+            lightboxImg.src = items[currentIndex].querySelector('img').src;
+        });
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+            if (e.key === 'ArrowLeft') document.getElementById('lightboxPrev').click();
+            if (e.key === 'ArrowRight') document.getElementById('lightboxNext').click();
+        });
+
+        // === FUTURISTIC TECH CANVAS BACKGROUND ===
+        (function() {
+            const canvas = document.getElementById('techCanvas');
+            const ctx = canvas.getContext('2d');
+            let W, H;
+
+            function resize() {
+                W = canvas.width = window.innerWidth;
+                H = canvas.height = window.innerHeight;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            // Floating particles
+            const particles = Array.from({length: 90}, () => ({
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight,
+                vx: (Math.random() - 0.5) * 0.35,
+                vy: (Math.random() - 0.5) * 0.35,
+                size: Math.random() * 1.4 + 0.3,
+                alpha: Math.random() * 0.5 + 0.1,
+                color: Math.random() > 0.5 ? '0,255,255' : '0,120,255'
+            }));
+
+            // Network nodes
+            const nodes = Array.from({length: 20}, () => ({
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight,
+                vx: (Math.random() - 0.5) * 0.22,
+                vy: (Math.random() - 0.5) * 0.22,
+                size: Math.random() * 2 + 1,
+                pulse: Math.random() * Math.PI * 2
+            }));
+
+            // Falling data streams (matrix-style)
+            const streams = Array.from({length: 14}, () => ({
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight,
+                speed: Math.random() * 1.2 + 0.4,
+                chars: Array.from({length: 14}, () => String.fromCharCode(0x30A0 + Math.floor(Math.random() * 96))),
+                alpha: Math.random() * 0.12 + 0.04
+            }));
+
+            function draw() {
+                ctx.clearRect(0, 0, W, H);
+
+                // Data streams
+                streams.forEach(s => {
+                    s.y += s.speed;
+                    if (s.y > H + 220) { s.y = -200; s.x = Math.random() * W; }
+                    ctx.font = '12px JetBrains Mono, monospace';
+                    s.chars.forEach((c, i) => {
+                        const fade = (1 - i / s.chars.length) * s.alpha;
+                        ctx.fillStyle = `rgba(0,255,255,${fade})`;
+                        ctx.fillText(c, s.x, s.y - i * 15);
+                    });
+                    if (Math.random() < 0.04) {
+                        s.chars[Math.floor(Math.random() * s.chars.length)] =
+                            String.fromCharCode(0x30A0 + Math.floor(Math.random() * 96));
+                    }
+                });
+
+                // Node network
+                nodes.forEach((n, i) => {
+                    n.x += n.vx; n.y += n.vy;
+                    if (n.x < 0 || n.x > W) n.vx *= -1;
+                    if (n.y < 0 || n.y > H) n.vy *= -1;
+                    n.pulse += 0.018;
+
+                    nodes.forEach((m, j) => {
+                        if (j <= i) return;
+                        const d = Math.hypot(m.x - n.x, m.y - n.y);
+                        if (d < 200) {
+                            ctx.strokeStyle = `rgba(0,200,255,${(1 - d / 200) * 0.1})`;
+                            ctx.lineWidth = 0.6;
+                            ctx.beginPath(); ctx.moveTo(n.x, n.y); ctx.lineTo(m.x, m.y); ctx.stroke();
+                        }
+                    });
+
+                    const ps = n.size + Math.sin(n.pulse) * 1.2;
+                    const g = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, ps * 7);
+                    g.addColorStop(0, 'rgba(0,255,255,0.3)');
+                    g.addColorStop(1, 'rgba(0,255,255,0)');
+                    ctx.fillStyle = g;
+                    ctx.beginPath(); ctx.arc(n.x, n.y, ps * 7, 0, Math.PI * 2); ctx.fill();
+                    ctx.fillStyle = 'rgba(0,230,255,0.85)';
+                    ctx.beginPath(); ctx.arc(n.x, n.y, ps, 0, Math.PI * 2); ctx.fill();
+                });
+
+                // Particles
+                particles.forEach(p => {
+                    p.x += p.vx; p.y += p.vy;
+                    if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+                    if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+                    ctx.fillStyle = `rgba(${p.color},${p.alpha})`;
+                    ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2); ctx.fill();
+                });
+
+                requestAnimationFrame(draw);
+            }
+            draw();
+        })();
+    </script>
+</body>
+</html>
